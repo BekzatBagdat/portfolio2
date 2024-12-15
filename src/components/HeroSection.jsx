@@ -6,18 +6,18 @@ const HeroSection = () => {
         {/* Image */}
         <div className="flex-shrink-0">
           <img
-            src={image} // Replace with the actual path to your image
+            src={image}
             alt="Bekzat"
-            className="mt-8 w-40 h-40 md:w-72 md:h-72 rounded-full shadow-lg object-cover border-4 border-gray-300"
+            className="mt-8 w-40 h-40 md:w-72 md:h-72 rounded-full shadow-lg object-cover border-4 border-gray-300 slide-in-left"
           />
         </div>
 
         {/* Text Content */}
         <div className="flex flex-col items-start max-w-xl">
-          <h1 className="text-4xl md:text-5xl font-extrabold text-black mb-4">
-            Hey There! 👋
+          <h1 className="text-4xl md:text-5xl font-extrabold text-black mb-4 slide-in-right">
+            Hey There!👋
           </h1>
-          <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
+          <p className="text-lg md:text-xl text-black leading-relaxed mb-6 fade-in2">
             I&apos;m <span className="font-semibold">Bekzat</span>, a passionate
             frontend developer who specializes in creating responsive,
             user-friendly websites. I craft intuitive, accessible, and visually

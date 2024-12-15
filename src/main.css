@@ -625,6 +625,10 @@ video {
   height: 16rem;
 }
 
+.h-auto{
+  height: auto;
+}
+
 .min-h-screen{
   min-height: 100vh;
 }
@@ -643,6 +647,10 @@ video {
 
 .max-w-xl{
   max-width: 36rem;
+}
+
+.max-w-xs{
+  max-width: 20rem;
 }
 
 .flex-shrink-0{
@@ -760,6 +768,70 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.fade-in2 {
+  animation: fadeIn 1.8s ease-in-out;
+}
+
+.fade-in3 {
+  animation: fadeIn 1.2s ease-in;
+}
+
+.fade-in4 {
+  animation: fadeIn 1.3s ease-in;
+}
+
+html,
+body {
+  overflow: hidden;
+  height: 100%;
+}
+
+.slide-in-left {
+  animation: slideInFromLeft 1s ease-out forwards;
+}
+
+.slide-in-right {
+  animation: slideInFromRight 1s ease-out forwards;
+}
+
 .hover\:underline:hover{
   text-decoration-line: underline;
 }
@@ -836,5 +908,23 @@ video {
   .md\:text-xl{
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+}
+
+@media (min-width: 1024px){
+  .lg\:mt-0{
+    margin-top: 0px;
+  }
+
+  .lg\:w-1\/2{
+    width: 50%;
+  }
+
+  .lg\:max-w-md{
+    max-width: 28rem;
+  }
+
+  .lg\:flex-row{
+    flex-direction: row;
   }
 }
