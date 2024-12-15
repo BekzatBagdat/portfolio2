@@ -1,5 +1,6 @@
 import auctionBestBids from '../img/auctionbestbids.jpg';
 import reactshop from '../img/reactshop.jpg';
+import holidize from '../img/holidize.jpg';
 const ProjectsSection = () => {
   return (
     <section className="mt-24 p-8">
@@ -84,6 +85,43 @@ const ProjectsSection = () => {
             </a>
             <a
               href="https://bekzatsreactshop.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-red text-white py-2 px-4 rounded mr-4"
+            >
+              Live
+            </a>
+          </div>
+        </div>
+        {/* Holidize */}
+        <div className="w-full md:w-1/3 mb-10 slide-in-right">
+          <img
+            src={holidize}
+            alt="Holidize"
+            className="w-full h-64 object-contain mb-4"
+          />
+          <h4 className="text-xl font-bold mb-2">Holidize</h4>
+          <p className="text-lg text-black mb-3">
+            I did not complete Project Exam 2 and do not have a corresponding
+            repository to showcase for this project.
+          </p>
+          <p className="text-lg text-black mb-3">
+            I was unable to do this exam due to working on other resits, I am
+            currently preparing for a resit and plan to deliver. This is just a
+            placeholder for that project
+          </p>
+          {/* Live and GitHub buttons */}
+          <div className="mt-10 flex justify-between">
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-blue text-white py-2 px-4 rounded"
+            >
+              GitHub
+            </a>
+            <a
+              href="#"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-red text-white py-2 px-4 rounded mr-4"
