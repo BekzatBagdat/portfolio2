@@ -4,7 +4,7 @@ const AboutSection = () => {
   return (
     <section className="mt-24 p-8 flex flex-col lg:flex-row items-center">
       <div className="lg:w-1/2">
-        <h3 className="text-2xl font-bold text-black mb-4 fade-in4">
+        <h3 className="text-2xl font-bold text-black mb-4 slide-in-left">
           About Me ✨
         </h3>
         <p className="text-lg text-black mb-6 fade-in">

@@ -13,7 +13,7 @@ export default {
       current: 'currentColor',
       white: '#ffffff',
       gray: '#e0e5e9',
-      yellow: '#f3d849',
+      red: '#F44336',
       blue: '#0a62D0',
       black: '#191718',
     },

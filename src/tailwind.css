@@ -47,8 +47,17 @@
 }
 html,
 body {
-  overflow: hidden;
   height: 100%;
+  overflow: scroll; /* Allows scrolling */
+}
+
+body {
+  overflow: -moz-scrollbars-none; /* Firefox */
+  scrollbar-width: none; /* Firefox */
+}
+
+::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, and Edge */
 }
 .slide-in-left {
   animation: slideInFromLeft 1s ease-out forwards;
